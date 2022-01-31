@@ -1,0 +1,31 @@
+{
+  "name": "Video Skipper",
+  "description": "Easily skip through any kind of web videos via the keyboard.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["video-skipper.js"]
+    }
+  ],
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/logo_16.png",
+      "32": "/images/logo_32.png",
+      "48": "/images/logo_48.png",
+      "128": "/images/logo_128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/logo_16.png",
+    "32": "/images/logo_32.png",
+    "48": "/images/logo_48.png",
+    "128": "/images/logo_128.png"
+  }
+}

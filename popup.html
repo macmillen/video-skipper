@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      code {
+        background-color: #ddd;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      p,
+      h1 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; gap: 10px">
+      <h1>Video Skipper</h1>
+      <img src="images/logo.svg" alt="" />
+    </div>
+
+    <p style="margin-top: 10px; margin-bottom: 4px">Skip time (seconds):</p>
+    <input type="number" id="skip-time" />
+
+    <div
+      style="
+        width: 250px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      "
+    >
+      <p>Skip back: Press <code>A</code> or <code>Left Arrow</code></p>
+      <p>Skip forward: Press <code>D</code> or <code>Right Arrow</code></p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
